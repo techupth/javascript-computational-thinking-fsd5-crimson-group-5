@@ -80,5 +80,9 @@ let orders = [
     creditCardType: "visa-electron",
   },
 ];
+let totalValue = 0;
+for (const order of orders) {
+  totalValue += order.productPrice * order.productQuantity;
+}
 
-// Start coding here
+console.log(`Total amount of the orders: ${totalValue} Baht`);
