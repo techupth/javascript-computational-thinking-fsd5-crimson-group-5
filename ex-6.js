@@ -8,10 +8,11 @@ function calculateTax(income) {
     taxAmount = income * taxPercentage;
     return taxAmount
   }
-  
+  else {
   taxPercentage = 0.2;
   taxAmount = income * taxPercentage;
   return taxAmount
+  }
 }
 
 const result1 = calculateTax(60000);
