@@ -82,3 +82,12 @@ let orders = [
 ];
 
 // Start coding here
+let mostExpensiveOrder = 0;
+let mostId
+for (let i = 0; i < orders.length; i++) {
+  if (orders[i].productPrice * orders[i].productQuantity > mostExpensiveOrder) {
+    mostExpensiveOrder = orders[i].productPrice * orders[i].productQuantity ;
+    mostId = orders[i].id
+  }
+}
+console.log(`The most expensive in orders: ${mostId} (${mostExpensiveOrder.toLocaleString('th-TH')}) Baht`)
